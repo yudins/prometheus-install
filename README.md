@@ -66,6 +66,6 @@ just to make sure, `sudo` in scripts won't interrupt you. And to install individ
 
 * Prometheus: `./prometheus.sh`
 * Alertmanager: `./alertmanager.sh`
-* Node Exporter: `./node.sh`
+* Node Exporter: `./node.sh` for Debian/Ubuntu or `./node_centos.sh` for CentOS
 * Blackbox Exporter: `./blackbox.sh`
 * Grafana: `./grafana.sh`
