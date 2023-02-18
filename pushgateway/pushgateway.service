@@ -1,0 +1,14 @@
+[Unit]
+Description=Prometheus Pushgateway
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=pushgateway
+Group=pushgateway
+Type=simple
+ExecStart=/usr/local/bin/pushgateway
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

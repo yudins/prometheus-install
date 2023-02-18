@@ -38,6 +38,7 @@ Full installation will install the following:
 * Alertmanager
 * Node Exporter
 * Blackbox Exporter
+* Pushgateway
 * Grafana
 
 Scripts have many `sudo`s, so before you start the full installation, do:
@@ -68,4 +69,5 @@ just to make sure, `sudo` in scripts won't interrupt you. And to install individ
 * Alertmanager: `./alertmanager.sh`
 * Node Exporter: `./node.sh` for Debian/Ubuntu or `./node_centos.sh` for CentOS
 * Blackbox Exporter: `./blackbox.sh`
+* Pushgateway: `./pushgateway.sh`
 * Grafana: `./grafana.sh`

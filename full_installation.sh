@@ -13,6 +13,7 @@
 ./node.sh
 ./blackbox.sh
 ./alertmanager.sh
+./pushgateway.sh
 ./grafana.sh
 
 echo "Installation complete."
