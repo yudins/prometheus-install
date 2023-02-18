@@ -20,7 +20,7 @@ sudo systemctl daemon-reload
 sudo systemctl enable pushgateway
 sudo systemctl start pushgateway
 sleep 5s
-sudo systemctl staus pushgateway
+sudo systemctl status pushgateway
 
 # Installation cleanup
 rm pushgateway-${VERSION}.linux-amd64.tar.gz
