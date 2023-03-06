@@ -14,6 +14,7 @@
 ./blackbox.sh
 ./alertmanager.sh
 ./pushgateway.sh
+./consul_exporter.sh
 ./grafana.sh
 
 echo "Installation complete."
