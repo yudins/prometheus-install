@@ -39,6 +39,7 @@ Full installation will install the following:
 * Node Exporter
 * Blackbox Exporter
 * Pushgateway
+* Consul Exporter
 * Grafana
 
 Scripts have many `sudo`s, so before you start the full installation, do:
