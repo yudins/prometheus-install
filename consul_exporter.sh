@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Export CONSUL_EXPORTER_TOKEN to env
-# export CONSUL_EXPORTER_TOKEN=YOUR_TOKEN
+# Set CONSUL_EXPORTER_TOKEN before launch
+CONSUL_EXPORTER_TOKEN="YOUR_SECRET_TOKEN"
 
 # Make consul_exporter user
 sudo adduser --no-create-home --disabled-login --shell /bin/false --gecos "Consul Exporter User" consul_exporter
@@ -27,9 +27,8 @@ After=network.target
 User=consul_exporter
 Group=consul_exporter
 Type=simple
-Environment="CONSUL_HTTP_TOKEN=$CONSUL_EXPORTER_TOKEN"
-ExecStart=/usr/local/bin/consul_exporter \
-    --consul.server="http://localhost:8500"
+Environment="CONSUL_HTTP_TOKEN=${CONSUL_EXPORTER_TOKEN}"
+ExecStart=/usr/local/bin/consul_exporter --consul.server="http://localhost:8500"
 Restart=always
 
 [Install]
